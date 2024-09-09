@@ -65,34 +65,81 @@ table {
 
 
 body {
-    font-family: 'Habibi', serif;
+    font-family: 'Habibi', Georgia, serif;
     font-size: 1.25em; 
-    color: ; 
-    background-color: ;
+    color: var(--black); 
+    background-color: var(--white);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 30px;
+    line-height: 1.5em;
 }
 
 /* headings */
-h1, h2, h3, h4 {
-    color: ; 
-}
+h1, h2, h3 {
+    font-family: 'Irish Grover', cursive, sans-serif;
+} 
 
 h1 {
     font-size: 2.5em;
-    color: ;
+    
 }
 
 h2 {
     font-size: 1.75em;
-    color: ;
+    
+}
 
 h3 {
     font-size: 1.25em;
-    color: ;
+    
 }
 
 h4 {
-    
+
 }
+
+/* header styles */
+header {
+    display: block;
+    color: var(--white);
+    text-align: center;
+}
+
+header h1{
+    background-color: var(--green);
+    line-height: 1.5em;
+}
+
+header h2 {
+    background-color: var(--green);
+    font-family: 'Habibi', Georgia, serif;
+    font-style: italic;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+nav ul li{
+    display: block;
+    background-color: var(--orange);
+    margin: 20px;
+}
+nav button {
+    display: block;
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+
+}
+
+
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
