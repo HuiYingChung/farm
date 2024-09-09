@@ -1,0 +1,47 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+
+
+/* Colors */
+:root {
+    --green: #06A816;
+    --orange: #E75D02;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+
+body {
+    font-family: 'Habibi', serif;
+    font-size: 1.25em; 
+    color: ; 
+    background-color: ;
+}
+
+/* headings */
+h1, h2, h3 {
+    color: ; 
+}
+
+h1 {
+    font-size: 2.5em;
+    color: ;
+}
+
+h2 {
+    font-size: 1.75em;
+    color: ;
+
+h3 {
+    font-size: 1.25em;
+    color: ;
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
