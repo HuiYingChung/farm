@@ -69,7 +69,7 @@ body {
     font-size: 1.25em; 
     color: var(--black); 
     background-color: var(--white);
-    min-width: 320px;
+    min-width: 428px;
     margin: 0 auto;
     line-height: 1.5em;
 }
@@ -89,6 +89,10 @@ footer {
     padding: 10px 0;
     background-color: var(--green);
     color: var(--white);
+}
+
+footer address{
+    padding-bottom: 30px;
 }
 
 #copyRight{
@@ -212,7 +216,7 @@ nav ul li{
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 834px) {
     #title{
         background-color: var(--green);
         display: grid;
@@ -260,11 +264,13 @@ nav ul li{
     }
     #contact, footer address{
         grid-column: 1/2;
+        text-align: center;
     }
 
     #hours {
         grid-column: 2/3;
         grid-row: 1/2;
+        text-align: center;
     }
 
     footer p {
@@ -284,7 +290,7 @@ nav ul li{
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 1280px) {
     header{
         display: grid;
         background-color: var(--green);
@@ -313,32 +319,44 @@ nav ul li{
     }
 
     footer{
-        grid-template-columns: 1fr 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     #contact{
         grid-column: 1/2;
-        padding-left: 20px;
+        
     }
 
     #hours{
         grid-column: 3/4;
-        padding-left: 80px;
+        
     }
     footer address{
         grid-column: 2/3;
-        padding-left: 40px;
+        
+        
     }
 
     footer p{
         grid-column: 4/5;
         grid-row: 1/2;
+        width: 100%;
     }
 
     #copyRight{
-        grid-column: 1/5;
-
+        grid-column: 1/6;
+    }
 }
 
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
+@media screen and (min-width: 1440px) {
+    .forSale{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    main h3{
+        grid-column: 1/5;
+    }
+
+}
