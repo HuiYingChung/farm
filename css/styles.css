@@ -93,6 +93,7 @@ footer {
 
 footer address{
     padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 #copyRight{
@@ -265,14 +266,14 @@ nav ul li{
     #contact, footer address{
         grid-column: 1/2;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     #hours {
         grid-column: 2/3;
         grid-row: 1/2;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     footer p {
@@ -335,7 +336,7 @@ nav ul li{
     }
     footer address{
         grid-column: 2/3;
-        padding-top: 0;
+        padding-top: 10px;
         
     }
 
