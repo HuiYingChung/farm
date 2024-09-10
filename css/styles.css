@@ -265,12 +265,14 @@ nav ul li{
     #contact, footer address{
         grid-column: 1/2;
         text-align: center;
+        padding-top: 20px;
     }
 
     #hours {
         grid-column: 2/3;
         grid-row: 1/2;
         text-align: center;
+        padding-top: 20px;
     }
 
     footer p {
@@ -333,7 +335,7 @@ nav ul li{
     }
     footer address{
         grid-column: 2/3;
-        
+        padding-top: 0;
         
     }
 
