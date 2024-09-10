@@ -70,6 +70,7 @@ body {
     color: var(--black); 
     background-color: var(--white);
     min-width: 428px;
+    max-width: 1440px;
     margin: 0 auto;
     line-height: 1.5em;
 }
@@ -83,6 +84,10 @@ a {
     color: var(--white);
 }
 
+a:focus {
+    border: 0.5px solid var(--white);
+}
+
 /* footer */
 footer {
     text-align: center;
@@ -91,7 +96,7 @@ footer {
     color: var(--white);
 }
 
-footer address{
+footer address {
     padding-bottom: 30px;
     padding-top: 10px;
 }
@@ -115,6 +120,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.5em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -129,7 +135,6 @@ h3 {
 
 /* header styles */
 header {
-    
     color: var(--white);
     text-align: center;
 }
@@ -138,7 +143,7 @@ header {
     display: block;
 }
 
-header h1{
+header h1 {
     background-color: var(--green);
     line-height: 1.5em;
 }
@@ -151,9 +156,7 @@ header h2 {
     padding-bottom: 20px;
 }
 
-
-
-nav ul {
+nav ul{
     display: block;
     padding: 20px 0;
     width: 80%;
@@ -167,6 +170,15 @@ nav ul li{
     list-style: none;
     border-radius: 4px;
 }
+
+nav a {
+    display: block;
+}
+
+nav ul li:hover {
+    border: 2px solid var(--black);
+}
+
 #backToTop {
     display: block;
     color: var(--white);
@@ -178,12 +190,15 @@ nav ul li{
     margin: 0;
     padding: 14px 10px;
     z-index: 5;
+}
 
+#backToTop:hover {
+    border: 2px solid var(--black);
 }
 
 /* main section */
 
-#fruitIntro, #vegeIntro{
+#fruitIntro, #vegeIntro {
     padding-bottom: 10px;
 }
 
@@ -193,11 +208,11 @@ nav ul li{
     text-align: center;
 }
 
-.items{
+.items {
     position: relative;
 }
 
-.items img{
+.items img {
     display: block;
     margin: 25px auto;   
 }
@@ -225,13 +240,14 @@ nav ul li{
         align-items: last baseline;
         padding: 10px;
     }
-    h1{
+
+    h1 {
         font-size: 1.6em;
         width: 100%;
         text-align: left;
-        padding: 0 10px;   
-        
+        padding: 0 10px;     
     }
+
     header h2 {
         font-size: 0.8em;
         width: 100%;
@@ -317,6 +333,7 @@ nav ul li{
     .forSale{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     main h3{
         grid-column: 1/4;
     }
@@ -327,17 +344,15 @@ nav ul li{
 
     #contact{
         grid-column: 1/2;
-        
     }
 
     #hours{
-        grid-column: 3/4;
-        
+        grid-column: 3/4;    
     }
+
     footer address{
         grid-column: 2/3;
-        padding-top: 10px;
-        
+        padding-top: 10px;   
     }
 
     footer p{
@@ -361,5 +376,4 @@ nav ul li{
     main h3{
         grid-column: 1/5;
     }
-
 }
